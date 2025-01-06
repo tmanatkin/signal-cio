@@ -6,7 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page Not Found</title>
   <script type="text/javascript">
-    window.location.href = window.location.href.split('/signal-cio/')[0] + '/signal-cio/';
+    // Get the current path and preserve it in the redirect
+    var currentPath = window.location.pathname + window.location.search + window.location.hash;
+
+    // Redirect to the same path under the correct base URL
+    window.location.href = window.location.origin + '/your-repo-name' + currentPath;
   </script>
 </head>
 
