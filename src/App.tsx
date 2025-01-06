@@ -1,4 +1,4 @@
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import "./styles/main.css";
 import SaasMgmt from "./components/LandingLayout/SaaSMgmt";
@@ -9,7 +9,7 @@ import FractionalCIO from "./components/LandingLayout/FractionalCIO";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/signal-cio">
       <Navbar />
       <Routes>
         <Route path="/" element={<FractionalCIO />} />

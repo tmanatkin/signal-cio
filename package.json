@@ -1,5 +1,6 @@
 {
   "name": "signal-cio-site",
+  "homepage": "https://tmanatkin.github.io/signal-cio",
   "private": true,
   "version": "0.0.0",
   "type": "module",

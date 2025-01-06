@@ -23,7 +23,7 @@ const SaasMgmt: React.FC = () => {
         reverse
       />
       <ProblemSection
-        title="Growing organizations struggle to manage IT costs and inefficiencies without strategic leadership, risking stunted growth and operational risks."
+        title="Growing organizations struggle to manage IT costs and inefficiencies without strategic leadership, putting at risk growth and operational excellence."
         bubbles={[
           "Misaligned technology investments waste money and erode margins.",
           "Lack of visibility over IT spend drives inefficiencies and rising costs.",
