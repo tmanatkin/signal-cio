@@ -1,5 +1,5 @@
 const Services: React.FC = () => {
-  return <div></div>;
+  return <main></main>;
 };
 
 export default Services;
