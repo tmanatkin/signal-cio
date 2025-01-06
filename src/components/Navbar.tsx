@@ -1,22 +1,24 @@
 import { Link } from "react-router-dom";
 
-interface NavbarProps {
-  pageTitles: string[];
-}
-
-const Navbar: React.FC<NavbarProps> = ({ pageTitles }) => {
+const Navbar: React.FC = () => {
   return (
     <nav>
       <Link to={`/`} id="nav-home"></Link>
       <ul>
-        {pageTitles.map((pageTitle) => {
-          const pageRoute = pageTitle.toLowerCase().replace(/\s+/g, "-");
-          return (
-            <li key={pageRoute}>
-              <Link to={`/${pageRoute}`}>{pageTitle}</Link>
-            </li>
-          );
-        })}
+        <li key="services">
+          <Link to={`/about-me`}>About Me</Link>
+        </li>
+        <li key="about-me">
+          <Link to={`/services`}>Services</Link>
+        </li>
+        <li key="book-a-call">
+          <Link
+            to={`https://signalcio.pipedrive.com/scheduler/lpKWaqfo/saas-management-consultation`}
+            target="_blank"
+          >
+            Book a Call
+          </Link>
+        </li>
       </ul>
     </nav>
   );

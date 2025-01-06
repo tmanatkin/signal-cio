@@ -1,21 +1,23 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import "./styles/main.css";
-import Home from "./components/Home";
-import AboutMe from "./components/AboutMe";
-import BookCall from "./components/BookCall";
-import Services from "./components/Services";
+import SaasMgmt from "./components/LandingLayout/SaaSMgmt";
+import AboutMe from "./components/AboutMe/AboutMe";
+import Services from "./components/Services/Services";
+import Footer from "./components/Footer";
+import FractionalCIO from "./components/LandingLayout/FractionalCIO";
 
 function App() {
   return (
-    <Router>
-      <Navbar pageTitles={["Services", "About Me", "Book a Call"]} />
+    <Router basename="/signal-cio">
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<FractionalCIO />} />
+        <Route path="/saas-management" element={<SaasMgmt />} />
         <Route path="/services" element={<Services />} />
         <Route path="/about-me" element={<AboutMe />} />
-        <Route path="/book-a-call" element={<BookCall />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

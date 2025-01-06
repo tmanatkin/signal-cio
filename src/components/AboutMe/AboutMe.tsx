@@ -1,5 +1,5 @@
 const AboutMe: React.FC = () => {
-  return <div></div>;
+  return <main></main>;
 };
 
 export default AboutMe;

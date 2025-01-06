@@ -22,6 +22,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--color-offwhite);
+  font-size: 16px;
 }
 
 main {
@@ -29,8 +30,7 @@ main {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  gap: 50px;
-  padding: 50px 0;
+  gap: 100px;
 }
 
 section {
@@ -70,7 +70,7 @@ h3 {
   margin: 0 0 30px 0;
 }
 
-.buttonContainer {
+.button-container {
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -94,7 +94,7 @@ a.button:hover {
   border: 2px solid var(--color-primary);
 }
 
-.bubbleContainer {
+.bubble-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -102,7 +102,7 @@ a.button:hover {
   gap: 20px;
 }
 
-.bubbleContainer .bubble {
+.bubble-container .bubble {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,7 +132,7 @@ nav {
 nav #nav-home {
   width: 300px;
   height: 65px;
-  background-image: url(/public/images/logo.png);
+  background-image: url(/images/logo.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -176,8 +176,13 @@ nav ul li a::after {
 /* Home */
 
 section.hero {
-  height: 600px;
-  align-items: flex-start;
+  margin: 30px 0 0 0;
+  flex-direction: row;
+  gap: 50px;
+}
+
+section.hero .hero-img {
+  width: 45%;
 }
 
 section.problem {
@@ -185,29 +190,75 @@ section.problem {
   gap: 40px;
 }
 
-/* 650px change nav */
+section.faq {
+  gap: 40px;
+}
 
-/* 
+.faq-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.faq-container .faq {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  /* height: 7.5em; */
+  border-radius: 5px;
+  box-shadow: 0 0 8px #00000039;
+  padding: 20px 30px;
+}
+
+.faq-container .faq > * {
+  margin: 0;
+}
+
+.faq-container .faq .question {
+  color: var(--color-primary);
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.faq-container .faq .answer {
+  color: var(--color-secondary-dark);
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
 footer {
   width: calc(100vw - 200px);
   height: 100px;
   margin: 100px 0 0 0;
   padding: 0 100px 0 100px;
-  background-color: var(--grey-accent);
+  background-color: var(--color-grey-light);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-footer p,
-footer a {
+footer p {
   color: white;
-  font-weight: 400;
-  font-size: 1em;
+  font-weight: 500;
+  font-size: 1.2em;
   text-align: center;
 }
 
-footer a:hover {
-  color: var(--primary-color);
-  cursor: pointer;
-} */
+/* mobile */
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  section.hero {
+    flex-direction: column;
+  }
+
+  section.hero .hero-img {
+    width: 60%;
+  }
+}
