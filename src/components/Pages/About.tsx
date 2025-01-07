@@ -1,4 +1,4 @@
-import ProblemSection from "../ProblemSection";
+import ProblemSection from "../Sections/ProblemSection";
 
 const About: React.FC = () => {
   return (
@@ -8,10 +8,6 @@ const About: React.FC = () => {
           Ensuring your SaaS spend aligns with your business goals while providing expert IT
           leadership that drives growth and mitigates risks.
         </h1>
-        {/* <h3>
-        Ensuring your SaaS spend aligns with your business goals while providing expert IT leadership that drives growth and mitigates risks.
-
-        </h3> */}
       </section>
       <section className="image-text">
         <img src="/signal-cio/images/gordon.png" alt="Gordon Atkin" />

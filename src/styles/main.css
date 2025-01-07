@@ -236,7 +236,7 @@ section.hero .hero-img {
   width: 40%;
 }
 
-.faq-container {
+.card-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -245,7 +245,7 @@ section.hero .hero-img {
   gap: 20px;
 }
 
-.faq-container .faq {
+.card-container .card {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -256,17 +256,17 @@ section.hero .hero-img {
   padding: 20px 30px;
 }
 
-.faq-container .faq > * {
+.card-container .card > * {
   margin: 0;
 }
 
-.faq-container .faq .question {
+.card-container .card .title {
   color: var(--color-primary);
   font-size: 1.5em;
   font-weight: 600;
 }
 
-.faq-container .faq .answer {
+.card-container .card .body {
   color: var(--color-secondary-dark);
   font-size: 1.2em;
   font-weight: 400;

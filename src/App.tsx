@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Shared/Navbar";
 import "./styles/main.css";
 import SaasMgmt from "./components/Pages/SaaSMgmt";
 import About from "./components/Pages/About";
-import Footer from "./components/Footer";
+import Footer from "./components/Shared/Footer";
 import FractionalCIO from "./components/Pages/FractionalCIO";
 
 function App() {

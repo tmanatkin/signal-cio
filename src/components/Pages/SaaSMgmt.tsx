@@ -1,6 +1,6 @@
-import FAQSection from "../FAQ/FAQSection";
-import HeroSection from "../HeroSection";
-import ProblemSection from "../ProblemSection";
+import CardSection from "../Sections/CardSection";
+import HeroSection from "../Sections/HeroSection";
+import ProblemSection from "../Sections/ProblemSection";
 
 const SaasMgmt: React.FC = () => {
   return (
@@ -30,31 +30,32 @@ const SaasMgmt: React.FC = () => {
           "Teams losing hours to SaaS renewals instead of driving growth"
         ]}
       />
-      <FAQSection
-        faqs={[
+      <CardSection
+        title="FAQs"
+        cards={[
           {
-            question: "What kind of savings can we expect?",
-            answer: "Our clients typically see a 10%-30% reduction in SaaS spend."
+            title: "What kind of savings can we expect?",
+            body: "Our clients typically see a 10%-30% reduction in SaaS spend."
           },
           {
-            question: "How long does the program take?",
-            answer: "Just 60 days to implement the full framework and start saving."
+            title: "How long does the program take?",
+            body: "Just 60 days to implement the full framework and start saving."
           },
           {
-            question: "What size companies do you work with?",
-            answer: "We specialize in SaaS companies scaling beyond 1,000 employees."
+            title: "What size companies do you work with?",
+            body: "We specialize in SaaS companies scaling beyond 1,000 employees."
           },
           {
-            question: "What makes you different?",
-            answer: "Over 10 years of experience and tailored solutions ensure high-impact results"
+            title: "What makes you different?",
+            body: "Over 10 years of experience and tailored solutions ensure high-impact results"
           },
           {
-            question: "Is there a guarantee?",
-            answer: "Yes, we guarantee a 10%-30% reduction in SaaS spend."
+            title: "Is there a guarantee?",
+            body: "Yes, we guarantee a 10%-30% reduction in SaaS spend."
           },
           {
-            question: "How do we get started?",
-            answer: "Begin with a complimentary SaaS maturity assessment."
+            title: "How do we get started?",
+            body: "Begin with a complimentary SaaS maturity assessment."
           }
         ]}
       />
