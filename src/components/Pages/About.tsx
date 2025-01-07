@@ -20,9 +20,9 @@ const About: React.FC = () => {
       <BubbleSection
         title="What is it like working together?"
         bubbles={[
-          "We win together, we lose together",
+          "Ensuring your long-term success is top of mind for me.",
           "Customer satisfaction drives me.",
-          "It's not about me, it's about you."
+          "I put a lot of value on openness and transparency."
         ]}
       />
       <ImageTextSection

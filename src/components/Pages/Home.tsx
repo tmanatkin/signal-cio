@@ -2,7 +2,7 @@ import CardSection from "../Sections/CardSection";
 import HeroSection from "../Sections/HeroSection";
 import BubbleSection from "../Sections/BubbleSection";
 
-const SaasMgmt: React.FC = () => {
+const Home: React.FC = () => {
   return (
     <main>
       <HeroSection
@@ -26,7 +26,7 @@ const SaasMgmt: React.FC = () => {
         title="Growing organizations struggle to manage IT costs and inefficiencies without strategic leadership, putting at risk growth and operational excellence."
         bubbles={[
           "Misaligned technology investments waste money and erode margins.",
-          "Lack of visibility over IT spend drives inefficiencies and rising costs.",
+          "Lack of controls over IT spend drives inefficiency and rising costs.",
           "Fragmented systems and poor governance hinder effective scaling."
         ]}
       />
@@ -45,6 +45,15 @@ const SaasMgmt: React.FC = () => {
           src: "/signal-cio/images/filter.png",
           alt: "SaaS logos filtering into an organized system"
         }}
+      />
+      <BubbleSection
+        title="Companies are getting blindsided by rising costs and the overhead of managing a growing
+        number of SaaS apps."
+        bubbles={[
+          "Overspending on unused licenses and poorly structured agreements",
+          "Shadow IT and ungoverned apps exposing your organization to risks",
+          "Teams losing hours to SaaS renewals instead of driving growth"
+        ]}
       />
       <CardSection
         title="FAQs"
@@ -103,4 +112,4 @@ const SaasMgmt: React.FC = () => {
   );
 };
 
-export default SaasMgmt;
+export default Home;
