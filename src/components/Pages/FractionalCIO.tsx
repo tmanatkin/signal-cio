@@ -1,6 +1,6 @@
 import CardSection from "../Sections/CardSection";
 import HeroSection from "../Sections/HeroSection";
-import ProblemSection from "../Sections/ProblemSection";
+import BubbleSection from "../Sections/BubbleSection";
 
 const SaasMgmt: React.FC = () => {
   return (
@@ -22,7 +22,7 @@ const SaasMgmt: React.FC = () => {
         }}
         reverse
       />
-      <ProblemSection
+      <BubbleSection
         title="Growing organizations struggle to manage IT costs and inefficiencies without strategic leadership, putting at risk growth and operational excellence."
         bubbles={[
           "Misaligned technology investments waste money and erode margins.",

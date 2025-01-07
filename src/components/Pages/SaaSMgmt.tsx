@@ -1,6 +1,6 @@
 import CardSection from "../Sections/CardSection";
 import HeroSection from "../Sections/HeroSection";
-import ProblemSection from "../Sections/ProblemSection";
+import BubbleSection from "../Sections/BubbleSection";
 
 const SaasMgmt: React.FC = () => {
   return (
@@ -21,7 +21,7 @@ const SaasMgmt: React.FC = () => {
           alt: "SaaS logos filtering into an organized system"
         }}
       />
-      <ProblemSection
+      <BubbleSection
         title="Companies are getting blindsided by rising costs and the overhead of managing a growing
         number of SaaS apps."
         bubbles={[

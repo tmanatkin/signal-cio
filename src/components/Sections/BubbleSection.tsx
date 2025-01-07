@@ -1,11 +1,11 @@
-interface ProblemSectionProps {
+interface BubbleSectionProps {
   title: string;
   bubbles: string[];
 }
 
-const ProblemSection: React.FC<ProblemSectionProps> = ({ title, bubbles }) => {
+const BubbleSection: React.FC<BubbleSectionProps> = ({ title, bubbles }) => {
   return (
-    <section className="problem">
+    <section className="bubble">
       <h2>{title}</h2>
       <div className="bubble-container">
         {bubbles.map((bubble) => (
@@ -16,4 +16,4 @@ const ProblemSection: React.FC<ProblemSectionProps> = ({ title, bubbles }) => {
   );
 };
 
-export default ProblemSection;
+export default BubbleSection;

@@ -278,12 +278,12 @@ section.hero .hero-img {
   gap: 50px;
 } */
 
-section.about-title {
+section.text-title {
   margin: 100px 0 0 0;
   height: 200px;
 }
 
-section.about-title h3 {
+section.text-title h3 {
   margin: 0;
 }
 
