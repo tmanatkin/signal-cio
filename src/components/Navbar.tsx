@@ -6,10 +6,10 @@ const Navbar: React.FC = () => {
       <Link to={`/`} id="nav-home"></Link>
       <ul>
         <li key="services">
-          <Link to={`/about-me`}>About Me</Link>
-        </li>
-        <li key="about-me">
           <Link to={`/services`}>Services</Link>
+        </li>
+        <li key="about">
+          <Link to={`/about`}>About</Link>
         </li>
         <li key="book-a-call">
           <Link

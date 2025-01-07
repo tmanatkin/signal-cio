@@ -1,6 +1,6 @@
-import FAQSection from "./Shared/FAQ/FAQSection";
-import HeroSection from "./Shared/HeroSection";
-import ProblemSection from "./Shared/ProblemSection";
+import FAQSection from "../FAQ/FAQSection";
+import HeroSection from "../HeroSection";
+import ProblemSection from "../ProblemSection";
 
 const SaasMgmt: React.FC = () => {
   return (
@@ -9,7 +9,7 @@ const SaasMgmt: React.FC = () => {
         title="Let's End Rising SaaS Costs and Renewal Chaos"
         subtitle="Strategic SaaS Management that drives growth and saves costs."
         buttons={[
-          { href: "/", name: "Watch Demo" },
+          { href: "/signal-cio/", name: "Watch Demo" },
           {
             href: "https://signalcio.pipedrive.com/scheduler/lpKWaqfo/saas-management-consultation",
             name: "Book a Call",

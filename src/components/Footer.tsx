@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer>
-      <p>SignalCIO</p>
+      <a href="/signal-cio/">SignalCIO</a>
       <p>Copyright or something?</p>
     </footer>
   );
