@@ -5,6 +5,7 @@ interface CardProps {
 
 interface CardSectionProps {
   title: string;
+  shadowBackground?: boolean;
   cards: CardProps[];
 }
 
@@ -17,14 +18,16 @@ const Card: React.FC<CardProps> = ({ title, body }) => {
   );
 };
 
-const CardSection: React.FC<CardSectionProps> = ({ title, cards }) => {
+const CardSection: React.FC<CardSectionProps> = ({ title, shadowBackground, cards }) => {
   return (
-    <section className="card">
-      <h1>{title}</h1>
-      <div className="card-container">
-        {cards.map((card) => (
-          <Card title={card.title} body={card.body} />
-        ))}
+    <section className={`card ${shadowBackground ? "shadow-background" : ""}`}>
+      <div className="section-content">
+        <h1>{title}</h1>
+        <div className="card-container">
+          {cards.map((card) => (
+            <Card title={card.title} body={card.body} />
+          ))}
+        </div>
       </div>
     </section>
   );

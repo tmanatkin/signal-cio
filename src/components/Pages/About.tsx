@@ -27,7 +27,7 @@ const About: React.FC = () => {
       />
       <ImageTextSection
         paragraphs={[
-          "Over 30 years ago, my wife and I met working in the Teton National Park at a place calledSignal Mountain Lodge. The Tetons, the outdoors, skiing, and our Signal Mountain continue to hold a special place in our hearts. When we're not skiing (20 min from the resort), you might find me golfing, at a Raiders football game, or together with my wife enjoying time with our 3 kids, traveling, or enjoying each other's company as we settle into being empty nesters."
+          "Over 30 years ago, my wife and I met working in the Teton National Park at a place called Signal Mountain Lodge. The Tetons, the outdoors, skiing, and our Signal Mountain continue to hold a special place in our hearts. When we're not skiing (20 min from the resort), you might find me golfing, at a Raiders football game, or together with my wife enjoying time with our 3 kids, traveling, or enjoying each other's company as we settle into being empty nesters."
         ]}
         image={{ src: "/signal-cio/images/signal.png", alt: "Signal Mountain Loge" }}
         reverse

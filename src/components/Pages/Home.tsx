@@ -1,11 +1,13 @@
 import CardSection from "../Sections/CardSection";
 import HeroSection from "../Sections/HeroSection";
 import BubbleSection from "../Sections/BubbleSection";
+import ColumnSection from "../Sections/ColumnSection";
 
 const Home: React.FC = () => {
   return (
     <main>
       <HeroSection
+        classes="heading"
         title="Transforming IT Uncertainty into Predictability, Reliability, and Efficiency"
         subtitle="Strategic IT Leadership to Fuel Your Growth."
         buttons={[
@@ -30,11 +32,75 @@ const Home: React.FC = () => {
           "Fragmented systems and poor governance hinder effective scaling."
         ]}
       />
+      <ColumnSection
+        columns={[
+          {
+            title: "Growth-Ready IT Strategy",
+            subtitle: "Optimize and Scale in 90 Days",
+            items: [
+              {
+                title: "IT Spend and Alignment Assessment",
+                body: "Optimize costs and ensure technology aligns with business goals.",
+                icon: {
+                  src: "/signal-cio/images/alignment.png",
+                  alt: ""
+                }
+              },
+              {
+                title: "Scalable Governance Framework",
+                body: "Implement controls to mitigate risks and drive efficiency.",
+                icon: {
+                  src: "/signal-cio/images/governance.png",
+                  alt: ""
+                }
+              },
+              {
+                title: "Fractional IT Leadership",
+                body: "Interim leadership to navigate growth and critical transitions.",
+                icon: {
+                  src: "/signal-cio/images/leadership.png",
+                  alt: ""
+                }
+              }
+            ]
+          },
+          {
+            title: "SaaS Cost Control Framework",
+            subtitle: "Streamline and Save in 60 Days",
+            items: [
+              {
+                title: "SaaS Spend Assessment and Rationalization",
+                body: "An audit of all SaaS applications, utilization, redundancies, and actionable cost-saving opportunities.",
+                icon: {
+                  src: "/signal-cio/images/rationalization.png",
+                  alt: ""
+                }
+              },
+              {
+                title: "Shadow IT Risk Reduction",
+                body: "Uncover ungoverned apps, identify control gaps, and mitigate security risks and threats.",
+                icon: {
+                  src: "/signal-cio/images/reduction.png",
+                  alt: ""
+                }
+              },
+              {
+                title: "SaaS Management Optimizer",
+                body: "Implement a sustainable framework for managing SaaS renewals, license utilization, and application lifecycle.",
+                icon: {
+                  src: "/signal-cio/images/optimize.png",
+                  alt: ""
+                }
+              }
+            ]
+          }
+        ]}
+      />
       <HeroSection
         title="Let's End Rising SaaS Costs and Renewal Chaos"
         subtitle="Strategic SaaS Management that drives growth and saves costs."
         buttons={[
-          { href: "/signal-cio/", name: "Watch Demo" },
+          { href: "/signal-cio/", name: "Learn More" },
           {
             href: "https://signalcio.pipedrive.com/scheduler/lpKWaqfo/saas-management-consultation",
             name: "Book a Call",
@@ -57,6 +123,7 @@ const Home: React.FC = () => {
       />
       <CardSection
         title="FAQs"
+        shadowBackground
         cards={[
           {
             title: "What results can I expect?",

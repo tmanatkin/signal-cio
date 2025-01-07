@@ -1,3 +1,15 @@
+:root {
+  --color-primary: #ff6700;
+  --color-secondary-dark: #1b0e5e;
+  --color-grey-dark: #333333;
+  --color-grey-light: #c0c5c1;
+  --color-offwhite: #fafafa;
+  --color-offwhite-dark: #eeeeee;
+  --color-offblack: #222222;
+  --color-error: #ec0c39;
+  font-family: "Metropolis", sans-serif;
+}
+
 /* Fonts */
 
 @font-face {
@@ -34,18 +46,6 @@
 
 /* General */
 
-:root {
-  --color-primary: #ff6700;
-  /* --color-primary-dark: #dc7245; */
-  --color-secondary-dark: #1b0e5e;
-  --color-grey-dark: #333333;
-  --color-grey-light: #c0c5c1;
-  --color-offwhite: #fafafa;
-  --color-offblack: #222222;
-  --color-error: #ec0c39;
-  font-family: "Metropolis", sans-serif;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -62,16 +62,38 @@ main {
 }
 
 section {
-  width: 80%;
-  max-width: 1200px;
-  border-radius: 10px;
-  /* padding: 50px; */
-  /* box-shadow: 0 0 20px #0000007b; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+section.shadow-background {
+  position: relative;
+  padding: 75px 0;
+  background-color: var(--color-offwhite-dark);
+}
+
+section.shadow-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 15px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.025), transparent);
+}
+
+.section-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 40px;
+  width: 80%;
+  max-width: 1200px;
 }
 
 h1 {
@@ -99,6 +121,7 @@ h3 {
 }
 
 p {
+  margin: 0;
   font-size: 1.5em;
   line-height: 180%;
 }
@@ -121,52 +144,12 @@ a.button {
   transition: 0.3s;
 }
 
-a.button:hover {
-  background-color: var(--color-offwhite);
-  color: var(--color-primary);
-  border: 2px solid var(--color-primary);
-}
-
-.bubble-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  /* align-items: stretch; */
-  gap: 20px;
-}
-
-.bubble-container .bubble {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  margin: 0;
-  border-radius: 5px;
-  color: var(--color-offwhite);
-  background-color: var(--color-secondary-dark);
-  font-weight: 500;
-  font-size: 1.75em;
-  line-height: 130%;
-  padding: 30px;
-  vertical-align: middle;
-}
-
-section.image-text {
-  flex-direction: row;
-  gap: 40px;
-}
-
-section.image-text img {
-  width: 40%;
-}
-
-section.text {
-  gap: 1.5em;
-}
-
-section.text p {
-  margin: 0;
+@media (hover: hover) {
+  a.button:hover {
+    background-color: var(--color-offwhite);
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+  }
 }
 
 /* Navbar */
@@ -226,16 +209,111 @@ nav ul li a::after {
   }
 }
 
-/* Home */
+/* Hero Section */
 
-section.hero {
-  margin: 30px 0 0 0;
+section.hero .section-content {
   flex-direction: row;
+}
+
+section.hero.heading .section-content {
+  margin: 30px 0 0 0;
 }
 
 section.hero .hero-img {
   width: 40%;
 }
+
+/* Bubble Section */
+
+section.bubble .bubble-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+section.bubble .bubble {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 0;
+  border-radius: 5px;
+  color: var(--color-offwhite);
+  background-color: var(--color-secondary-dark);
+  font-weight: 500;
+  font-size: 1.75em;
+  line-height: 130%;
+  padding: 30px;
+  vertical-align: middle;
+}
+
+/* Column Section */
+
+section.column .section-content {
+  flex-direction: row;
+  gap: 40px;
+  align-items: stretch;
+}
+
+section.column .column-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+section.column .column-header {
+  background-color: var(--color-primary);
+  padding: 1em 1em;
+  border-radius: 10px 10px 0 0;
+}
+
+section.column h2,
+section.column h3 {
+  color: var(--color-offwhite);
+  text-align: center;
+  margin: 0;
+}
+
+section.column h2 {
+  font-size: 2em;
+}
+
+section.column h3 {
+  font-size: 1.5em;
+}
+
+section.column .column-item-container {
+  border-radius: 0 0 10px 10px;
+  border: 5px solid var(--color-primary);
+  border-top: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+section.column .column-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+section.column .column-item img {
+  width: 100px;
+  height: 100px;
+}
+
+section.column p {
+  font-size: 1.2em;
+}
+
+section.column .column-item-title {
+  font-weight: 600;
+}
+
+/* Card Section */
 
 .card-container {
   display: flex;
@@ -247,11 +325,11 @@ section.hero .hero-img {
 }
 
 .card-container .card {
+  background-color: var(--color-offwhite);
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 300px;
-  /* height: 7.5em; */
   border-radius: 5px;
   box-shadow: 0 0 8px #00000039;
   padding: 20px 30px;
@@ -261,25 +339,21 @@ section.hero .hero-img {
   margin: 0;
 }
 
-.card-container .card .title {
+.card-container .title {
   color: var(--color-primary);
   font-size: 1.5em;
   font-weight: 600;
 }
 
-.card-container .card .body {
+.card-container .body {
   color: var(--color-secondary-dark);
   font-size: 1.2em;
   font-weight: 400;
 }
 
-/* About */
+/* Text Title Section */
 
-/* main.about {
-  gap: 50px;
-} */
-
-section.text-title {
+section.text-title .section-content {
   margin: 100px 0 0 0;
   height: 200px;
 }
@@ -288,12 +362,28 @@ section.text-title h3 {
   margin: 0;
 }
 
+/* Image Text Section */
+
+section.image-text .section-content {
+  flex-direction: row;
+  gap: 40px;
+}
+
+section.image-text .image-text-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+section.image-text img {
+  width: 40%;
+}
+
 /* Footer */
 
 footer {
   width: calc(100vw - 200px);
   height: 100px;
-  margin: 100px 0 0 0;
   padding: 0 100px 0 100px;
   background-color: var(--color-grey-light);
   display: flex;
@@ -330,17 +420,20 @@ footer a::after {
     width: 100%;
   }
 }
-/* mobile */
+
+/* Mobile */
+
 @media (max-width: 1000px) {
   h1 {
     font-size: 2em;
   }
 
-  section.hero {
+  section.hero .section-content {
     flex-direction: column;
   }
 
   section.hero .hero-img {
     width: 60%;
+    background-color: red;
   }
 }

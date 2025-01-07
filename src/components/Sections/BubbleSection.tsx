@@ -6,11 +6,13 @@ interface BubbleSectionProps {
 const BubbleSection: React.FC<BubbleSectionProps> = ({ title, bubbles }) => {
   return (
     <section className="bubble">
-      <h2>{title}</h2>
-      <div className="bubble-container">
-        {bubbles.map((bubble) => (
-          <p className="bubble">{bubble}</p>
-        ))}
+      <div className="section-content">
+        <h2>{title}</h2>
+        <div className="bubble-container">
+          {bubbles.map((bubble) => (
+            <p className="bubble">{bubble}</p>
+          ))}
+        </div>
       </div>
     </section>
   );
