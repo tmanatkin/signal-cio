@@ -7,7 +7,7 @@ const About: React.FC = () => {
     <main className="about">
       <TextTitleSection
         title="Ensuring your SaaS spend aligns with your business goals while providing expert IT
-        leadership that drives growth and mitigates risks."
+        leadership that fuels growth and mitigates risks."
       />
       <ImageTextSection
         paragraphs={[

@@ -342,6 +342,7 @@ section.column .column-item-title {
 .card-container .title {
   color: var(--color-primary);
   font-size: 1.5em;
+  line-height: 140%;
   font-weight: 600;
 }
 
