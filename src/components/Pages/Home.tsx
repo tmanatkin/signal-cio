@@ -98,9 +98,13 @@ const Home: React.FC = () => {
       />
       <HeroSection
         title="Let's End Rising SaaS Costs and Renewal Chaos"
-        subtitle="Strategic SaaS Management that drives growth and saves costs."
+        subtitle="Strategic SaaS Management that fuels growth and saves costs."
         buttons={[
-          { href: "/signal-cio/", name: "Learn More" },
+          {
+            href: "https://webforms.pipedrive.com/f/6N6NtLvdSHXfuxvaaI1SWQ1QTWnN4fUXf2gofWdMoVaToOZloveVeax2VSLDy3D4mn",
+            name: "Learn More",
+            target: "_blank"
+          },
           {
             href: "https://signalcio.pipedrive.com/scheduler/lpKWaqfo/saas-management-consultation",
             name: "Book a Call",
