@@ -200,7 +200,7 @@ nav ul li a::after {
   bottom: 0;
   width: 0;
   background-color: var(--color-primary);
-  transition: width 0.75s;
+  transition: width 0.4s;
 }
 
 @media (hover: hover) {
@@ -413,7 +413,16 @@ footer a::after {
   bottom: 0;
   width: 0;
   background-color: var(--color-offwhite);
-  transition: width 0.75s;
+  transition: width 0.4s;
+}
+
+footer a svg {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+footer a svg path {
+  fill: var(--color-offwhite);
 }
 
 @media (hover: hover) {
