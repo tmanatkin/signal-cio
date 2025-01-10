@@ -22,7 +22,7 @@ const Home: React.FC = () => {
           }
         ]}
         image={{
-          src: "/signal-cio/images/thinking.png",
+          src: "/images/thinking.png",
           alt: "Businessman thinking about managing the chaos of IT"
         }}
       />
@@ -45,7 +45,7 @@ const Home: React.FC = () => {
                 title: "IT Spend and Alignment Assessment",
                 body: "Optimize costs and ensure technology aligns with business goals.",
                 icon: {
-                  src: "/signal-cio/images/alignment.png",
+                  src: "/images/alignment.png",
                   alt: ""
                 }
               },
@@ -53,7 +53,7 @@ const Home: React.FC = () => {
                 title: "Scalable Governance Framework",
                 body: "Implement controls to mitigate risks and drive efficiency.",
                 icon: {
-                  src: "/signal-cio/images/governance.png",
+                  src: "/images/governance.png",
                   alt: ""
                 }
               },
@@ -61,7 +61,7 @@ const Home: React.FC = () => {
                 title: "Fractional IT Leadership",
                 body: "Interim leadership to navigate growth and critical transitions.",
                 icon: {
-                  src: "/signal-cio/images/leadership.png",
+                  src: "/images/leadership.png",
                   alt: ""
                 }
               }
@@ -75,7 +75,7 @@ const Home: React.FC = () => {
                 title: "SaaS Spend Assessment and Rationalization",
                 body: "An audit of all SaaS applications, utilization, redundancies, and actionable cost-saving opportunities.",
                 icon: {
-                  src: "/signal-cio/images/rationalization.png",
+                  src: "/images/rationalization.png",
                   alt: ""
                 }
               },
@@ -83,7 +83,7 @@ const Home: React.FC = () => {
                 title: "Shadow IT Risk Reduction",
                 body: "Uncover ungoverned apps, identify control gaps, and mitigate security risks and threats.",
                 icon: {
-                  src: "/signal-cio/images/reduction.png",
+                  src: "/images/reduction.png",
                   alt: ""
                 }
               },
@@ -91,7 +91,7 @@ const Home: React.FC = () => {
                 title: "SaaS Management Optimizer",
                 body: "Implement a sustainable framework for managing SaaS renewals, license utilization, and application lifecycle.",
                 icon: {
-                  src: "/signal-cio/images/optimize.png",
+                  src: "/images/optimize.png",
                   alt: ""
                 }
               }
@@ -115,7 +115,7 @@ const Home: React.FC = () => {
           }
         ]}
         image={{
-          src: "/signal-cio/images/filter.png",
+          src: "/images/filter.png",
           alt: "SaaS logos filtering into an organized system"
         }}
       />

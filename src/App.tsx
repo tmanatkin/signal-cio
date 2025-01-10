@@ -7,7 +7,7 @@ import "./styles/main.css";
 
 function App() {
   return (
-    <Router basename="/signal-cio">
+    <Router basename="/">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

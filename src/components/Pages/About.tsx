@@ -15,7 +15,7 @@ const About: React.FC = () => {
           "I've also had some incredible experiences working with Venture Capital, Private Equity,and going through 3 IPOs.",
           "Each experience has taught me an important lesson that I'm now looking to share and pass on to others in my passion for SaaS Management and working as a CIO."
         ]}
-        image={{ src: "/signal-cio/images/gordon.png", alt: "Gordon Atkin" }}
+        image={{ src: "/images/gordon.png", alt: "Gordon Atkin" }}
       />
       <BubbleSection
         title="What is it like working together?"
@@ -30,7 +30,7 @@ const About: React.FC = () => {
         paragraphs={[
           "Over 30 years ago, my wife and I met working in the Teton National Park at a place called Signal Mountain Lodge. The Tetons, the outdoors, skiing, and our Signal Mountain continue to hold a special place in our hearts. When we're not skiing (20 min from the resort), you might find me golfing, at a Raiders football game, or together with my wife enjoying time with our 3 kids, traveling, or enjoying each other's company as we settle into being empty nesters."
         ]}
-        image={{ src: "/signal-cio/images/signal.png", alt: "Signal Mountain Loge" }}
+        image={{ src: "/images/signal.png", alt: "Signal Mountain Loge" }}
       />
     </main>
   );
