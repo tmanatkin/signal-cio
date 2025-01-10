@@ -12,7 +12,7 @@ const About: React.FC = () => {
       <ImageTextSection
         paragraphs={[
           "I've had an amazing 20+ year career working in tech with companies like Oracle, Ancestry.com, Fusion-io, Instructure, Talkdesk, and Salsify.",
-          "I've also had some incredible experiences working with Venture Capital, Private Equity,and going through 3 IPOs.",
+          "I've also had some incredible experiences working with Venture Capital, Private Equity, and going through 3 IPOs.",
           "Each experience has taught me an important lesson that I'm now looking to share and pass on to others in my passion for SaaS Management and working as a CIO."
         ]}
         image={{ src: "/images/gordon.png", alt: "Gordon Atkin" }}
