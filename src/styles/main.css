@@ -15,7 +15,11 @@
 @font-face {
   font-family: "Metropolis";
   src: url("https://github.com/dw5/Metropolis/raw/refs/heads/master/Fonts/Webfonts/WOFF2/Metropolis-Regular.woff2")
-    format("woff2");
+      format("woff2"),
+    url("https://github.com/dw5/Metropolis/raw/refs/heads/master/Fonts/Webfonts/WOFF/Metropolis-Regular.woff")
+      format("woff"),
+    url("https://github.com/dw5/Metropolis/raw/refs/heads/master/Fonts/Webfonts/EOT/Metropolis-Regular.eot")
+      format("eot");
   font-weight: 400;
   font-style: normal;
 }
