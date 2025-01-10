@@ -1,5 +1,6 @@
-interface HeroSectionProps {
-  classes?: string;
+import SectionProps from "./Section";
+
+interface HeroSectionProps extends SectionProps {
   title: string;
   subtitle: string;
   buttons: { href: string; name: string; target?: string }[];
@@ -7,20 +8,18 @@ interface HeroSectionProps {
     src: string;
     alt: string;
   };
-  reverse?: boolean;
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({
-  classes,
+  className,
   title,
   subtitle,
   buttons,
-  image,
-  reverse
+  image
 }) => {
   return (
-    <section className={`hero ${classes}`}>
-      <div className="section-content" style={{ flexDirection: reverse ? "row-reverse" : "row" }}>
+    <section className={`hero ${className || ""}`}>
+      <div className="section-content">
         <div className="hero-info">
           <h1>{title}</h1>
           <h3>{subtitle}</h3>

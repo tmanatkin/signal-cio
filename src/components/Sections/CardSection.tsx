@@ -1,11 +1,12 @@
+import SectionProps from "./Section";
+
 interface CardProps {
   title: string;
   body: string;
 }
 
-interface CardSectionProps {
+interface CardSectionProps extends SectionProps {
   title: string;
-  shadowBackground?: boolean;
   cards: CardProps[];
 }
 
@@ -22,9 +23,9 @@ const Card: React.FC<CardProps> = ({ title, body }) => {
   );
 };
 
-const CardSection: React.FC<CardSectionProps> = ({ title, shadowBackground, cards }) => {
+const CardSection: React.FC<CardSectionProps> = ({ className, title, cards }) => {
   return (
-    <section className={`card ${shadowBackground ? "shadow-background" : ""}`}>
+    <section className={`card ${className || ""}`}>
       <div className="section-content">
         <h1>{title}</h1>
         <div className="card-container">

@@ -69,6 +69,10 @@ section {
   width: 100%;
 }
 
+section.reverse div.section-content {
+  flex-direction: row-reverse;
+}
+
 section.shadow-background {
   position: relative;
   padding: 75px 0;
@@ -84,6 +88,17 @@ section.shadow-background::before {
   width: 100%;
   height: 15px;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.025), transparent);
+}
+
+section.shadow-background.bottom-shadow::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 15px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.025), transparent);
 }
 
 .section-content {
@@ -258,9 +273,12 @@ section.column .section-content {
 }
 
 section.column .column-container {
-  display: flex;
   flex: 1;
+  display: flex;
   flex-direction: column;
+  background-color: var(--color-offwhite);
+  box-shadow: 0 0 8px #00000039;
+  border-radius: 10px;
 }
 
 section.column .column-header {
@@ -285,11 +303,13 @@ section.column h3 {
 }
 
 section.column .column-item-container {
-  border-radius: 0 0 10px 10px;
-  border: 5px solid var(--color-primary);
-  border-top: none;
+  /* border-radius: 0 0 10px 10px; */
+  /* border: 5px solid var(--color-primary); */
+  /* border-top: none; */
+  flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   gap: 20px;
   padding: 20px;
 }

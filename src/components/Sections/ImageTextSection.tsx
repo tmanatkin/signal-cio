@@ -1,16 +1,17 @@
-interface ImageTextSectionProps {
+import SectionProps from "./Section";
+
+interface ImageTextSectionProps extends SectionProps {
   paragraphs: string[];
   image: {
     src: string;
     alt: string;
   };
-  reverse?: boolean;
 }
 
-const ImageTextSection: React.FC<ImageTextSectionProps> = ({ paragraphs, image, reverse }) => {
+const ImageTextSection: React.FC<ImageTextSectionProps> = ({ className, paragraphs, image }) => {
   return (
-    <section className="image-text">
-      <div className="section-content" style={{ flexDirection: reverse ? "row-reverse" : "row" }}>
+    <section className={`image-text ${className || ""}`}>
+      <div className="section-content">
         <img src={image.src} alt={image.alt} />
         <div className="image-text-body">
           {paragraphs.map((paragraph) => (

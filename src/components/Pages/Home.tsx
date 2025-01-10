@@ -7,7 +7,7 @@ const Home: React.FC = () => {
   return (
     <main>
       <HeroSection
-        classes="heading"
+        className="heading reverse"
         title="Transforming IT Uncertainty into Predictability, Reliability, and Efficiency"
         subtitle="Strategic IT Leadership to Fuel Your Growth."
         buttons={[
@@ -25,7 +25,6 @@ const Home: React.FC = () => {
           src: "/signal-cio/images/thinking.png",
           alt: "Businessman thinking about managing the chaos of IT"
         }}
-        reverse
       />
       <BubbleSection
         title="Growing organizations struggle to manage IT costs and inefficiencies without strategic leadership, putting at risk growth and operational excellence."
@@ -36,6 +35,7 @@ const Home: React.FC = () => {
         ]}
       />
       <ColumnSection
+        className="shadow-background bottom-shadow"
         columns={[
           {
             title: "Growth-Ready IT Strategy",
@@ -129,8 +129,8 @@ const Home: React.FC = () => {
         ]}
       />
       <CardSection
+        className="shadow-background"
         title="FAQs"
-        shadowBackground
         cards={[
           {
             title: "Who are these services for?",
