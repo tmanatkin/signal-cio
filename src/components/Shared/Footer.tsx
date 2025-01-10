@@ -1,8 +1,9 @@
 const Footer = () => {
   return (
     <footer>
-      <a href="/signal-cio/">SignalCIO</a>
-      <a href="/">
+      {/* <a href="/signal-cio/">SignalCIO</a> */}
+      <p>Copyright © 2025 SignalCIO. All Rights Reserved</p>
+      <a href="https://www.linkedin.com/company/signalcio" target="_blank">
         <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
           <path
             fill-rule="evenodd"

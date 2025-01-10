@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
         </li>
         <li key="book-a-call">
           <Link
-            to={`https://signalcio.pipedrive.com/scheduler/lpKWaqfo/saas-management-consultation`}
+            to={`https://signalcio.pipedrive.com/scheduler/bEMjaPsQ/signalcio-intro-initial-consultation`}
             target="_blank"
           >
             Book a Call

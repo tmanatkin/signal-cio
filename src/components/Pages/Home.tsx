@@ -11,9 +11,12 @@ const Home: React.FC = () => {
         title="Transforming IT Uncertainty into Predictability, Reliability, and Efficiency"
         subtitle="Strategic IT Leadership to Fuel Your Growth."
         buttons={[
-          { href: "/signal-cio/", name: "Learn More" },
           {
-            href: "https://signalcio.pipedrive.com/scheduler/lpKWaqfo/saas-management-consultation",
+            href: "https://webforms.pipedrive.com/f/73PgPZA0UApGsYfUL50AvJF3sGApBQXZX8AtUz2Agyvd3KqT3Cnk2g8XQJKQWdnSw3",
+            name: "Learn More"
+          },
+          {
+            href: "https://signalcio.pipedrive.com/scheduler/bEMjaPsQ/signalcio-intro-initial-consultation",
             name: "Book a Call",
             target: "_blank"
           }
