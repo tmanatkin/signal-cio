@@ -69,6 +69,10 @@ section {
   width: 100%;
 }
 
+section.space-bottom {
+  margin-bottom: 100px;
+}
+
 section.reverse div.section-content {
   flex-direction: row-reverse;
 }
@@ -311,7 +315,7 @@ section.column .column-item-container {
   flex-direction: column;
   justify-content: space-evenly;
   gap: 20px;
-  padding: 20px;
+  padding: 20px 20px 20px 0;
 }
 
 section.column .column-item {
@@ -323,6 +327,7 @@ section.column .column-item {
 section.column .column-item img {
   width: 100px;
   height: 100px;
+  padding: 0 10px;
 }
 
 section.column p {
