@@ -321,18 +321,26 @@ section.column .column-item-title {
   flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
-  gap: 20px;
+  gap: 50px;
 }
 
 .card-container .card {
   background-color: var(--color-offwhite);
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  width: 300px;
+  width: 350px;
   border-radius: 5px;
   box-shadow: 0 0 8px #00000039;
-  padding: 20px 30px;
+}
+
+.card-container .card-header {
+  border-radius: 5px 5px 0 0;
+  padding: 20px 25px;
+  background-color: var(--color-primary);
+}
+
+.card-container .card-body {
+  padding: 20px 25px;
 }
 
 .card-container .card > * {
@@ -340,8 +348,9 @@ section.column .column-item-title {
 }
 
 .card-container .title {
-  color: var(--color-primary);
-  font-size: 1.5em;
+  text-align: center;
+  color: var(--color-offwhite);
+  font-size: 1.35em;
   line-height: 140%;
   font-weight: 600;
 }

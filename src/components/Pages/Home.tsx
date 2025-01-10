@@ -133,52 +133,28 @@ const Home: React.FC = () => {
         shadowBackground
         cards={[
           {
+            title: "Who are these services for?",
+            body: "We specialize in working with executive-level roles in tech companies scaling beyond 500 employees."
+          },
+          {
             title: "What results can I expect?",
-            body: "Clients typically see up to a 30% reduction in IT costs and improved governance readiness."
+            body: "Streamlined IT operations, 10%-30% reduction in SaaS spend, and a governance framework that supports scalable growth and reduces risk."
           },
           {
-            title: "How long does it take?",
-            body: "Our program delivers measurable results within 90 days."
-          },
-          {
-            title: "Who is this program for?",
-            body: "Mid-sized tech companies scaling rapidly or preparing for an IPO or acquisition."
-          },
-          {
-            title: "What makes your service different?",
-            body: "Over 20 years of experience and a tailored approach ensure actionable, high-impact results."
-          },
-          {
-            title: "Is there a guarantee?",
-            body: "We guarantee measurable improvements in IT cost efficiency and alignment."
-          },
-          {
-            title: "How do we get started?",
-            body: "Begin with our IT Spend and Alignment Assessment to identify immediate opportunities."
-          },
-          {
-            title: "What kind of savings can we expect?",
-            body: "Our clients typically see a 10%-30% reduction in SaaS spend."
-          },
-          {
-            title: "How long does the program take?",
-            body: "Just 60 days to implement the full framework and start saving."
-          },
-          {
-            title: "What size companies do you work with?",
-            body: "We specialize in SaaS companies scaling beyond 1,000 employees."
+            title: "When will I see results?",
+            body: "The Growth-Ready IT Strategy delivers measurable outcomes within 90 days, including actionable roadmaps and implementation playbooks."
           },
           {
             title: "What makes you different?",
-            body: "Over 10 years of experience and tailored solutions ensure high-impact results"
+            body: "We focus exclusively on aligning IT with business objectives. With 20+ years of experience, we deliver high-impact strategies tailored to your unique growth challenges."
           },
           {
-            title: "Is there a guarantee?",
-            body: "Yes, we guarantee a 10%-30% reduction in SaaS spend."
+            title: "Do you guarantee results?",
+            body: "We guarantee measurable improvements in IT alignment, cost efficiency, and operational readiness. If we don't deliver, we'll continue working with you until you see results."
           },
           {
-            title: "How do we get started?",
-            body: "Begin with a complimentary SaaS maturity assessment."
+            title: "How do I get started?",
+            body: "Book a meeting and begin with one of our complimentary assessments for IT Efficiency or SaaS Maturity."
           }
         ]}
       />

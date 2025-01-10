@@ -12,8 +12,12 @@ interface CardSectionProps {
 const Card: React.FC<CardProps> = ({ title, body }) => {
   return (
     <div className="card">
-      <p className="title">{title}</p>
-      <p className="body">{body}</p>
+      <div className="card-header">
+        <p className="title">{title}</p>
+      </div>
+      <div className="card-body">
+        <p className="body">{body}</p>
+      </div>
     </div>
   );
 };
