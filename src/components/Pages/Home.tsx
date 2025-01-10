@@ -13,7 +13,8 @@ const Home: React.FC = () => {
         buttons={[
           {
             href: "https://webforms.pipedrive.com/f/73PgPZA0UApGsYfUL50AvJF3sGApBQXZX8AtUz2Agyvd3KqT3Cnk2g8XQJKQWdnSw3",
-            name: "Learn More"
+            name: "Learn More",
+            target: "_blank"
           },
           {
             href: "https://signalcio.pipedrive.com/scheduler/bEMjaPsQ/signalcio-intro-initial-consultation",
