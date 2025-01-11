@@ -6,7 +6,7 @@ const Navbar: React.FC = () => {
       <Link to={`/`} id="nav-home"></Link>
       <ul>
         <li key="services">
-          <Link to={`/`}>Services</Link>
+          <Link to={`/#services`}>Services</Link>
         </li>
         <li key="about">
           <Link to={`/about`}>About</Link>

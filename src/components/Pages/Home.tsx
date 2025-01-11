@@ -36,6 +36,7 @@ const Home: React.FC = () => {
         ]}
       />
       <ColumnSection
+        id="services"
         className="shadow-background bottom-shadow"
         columns={[
           {

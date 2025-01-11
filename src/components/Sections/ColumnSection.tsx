@@ -15,9 +15,9 @@ interface ColumnSectionProps extends SectionProps {
   }[];
 }
 
-const ColumnSection: React.FC<ColumnSectionProps> = ({ className, columns }) => {
+const ColumnSection: React.FC<ColumnSectionProps> = ({ id, className, columns }) => {
   return (
-    <section className={`column ${className || ""}`}>
+    <section id={`${id || ""}`} className={`column ${className || ""}`}>
       <div className="section-content">
         {columns.map((column) => (
           <div className="column-container">
