@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="header">
       <Link to={`/`} id="nav-home" onClick={closeMenu}>
-        <img src="/images/logo.png"></img>
+        <img src="/images/logo.png" alt="Signal CIO Logo" />
       </Link>
       <input
         className="menu-btn"
