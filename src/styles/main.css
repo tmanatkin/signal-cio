@@ -62,7 +62,7 @@ main {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  gap: 100px;
+  gap: 6em;
 }
 
 section {
@@ -74,7 +74,7 @@ section {
 }
 
 section.space-bottom {
-  margin-bottom: 100px;
+  margin-bottom: 6em;
 }
 
 section.reverse div.section-content {
@@ -83,7 +83,7 @@ section.reverse div.section-content {
 
 section.shadow-background {
   position: relative;
-  padding: 75px 0;
+  padding: 4.5em 0;
   background-color: var(--color-offwhite-dark);
 }
 
@@ -94,7 +94,7 @@ section.shadow-background::before {
   left: 0;
   right: 0;
   width: 100%;
-  height: 15px;
+  height: 1em;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.025), transparent);
 }
 
@@ -105,7 +105,7 @@ section.shadow-background.bottom-shadow::after {
   left: 0;
   right: 0;
   width: 100%;
-  height: 15px;
+  height: 1em;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.025), transparent);
 }
 
@@ -114,7 +114,7 @@ section.shadow-background.bottom-shadow::after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 2.5em;
   width: 80%;
   max-width: 1200px;
 }
@@ -140,7 +140,7 @@ h3 {
   color: var(--color-secondary-dark);
   font-size: 1.5em;
   font-weight: 400;
-  margin: 0 0 30px 0;
+  margin: 0 0 2em 0;
 }
 
 p {
@@ -152,14 +152,14 @@ p {
 .button-container {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 1.5em;
 }
 
 a.button {
   text-decoration: none;
   font-size: 1.2em;
   font-weight: 500;
-  padding: 15px 25px;
+  padding: 1em 1.5em;
   border-radius: 5px;
   background-color: var(--color-primary);
   color: var(--color-offwhite);
@@ -202,7 +202,6 @@ nav ul {
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  /* width: 500px; */
   gap: 9em;
   margin: 0 20px 0 0;
 }
@@ -214,6 +213,7 @@ nav ul li a {
   font-size: 1.2em;
   font-weight: 500;
   padding: 0 0 5px 0;
+  white-space: nowrap;
 }
 
 nav ul li a::after {
@@ -269,7 +269,7 @@ section.bubble .bubble {
   font-weight: 500;
   font-size: 1.75em;
   line-height: 130%;
-  padding: 30px;
+  padding: 1em;
   vertical-align: middle;
 }
 
@@ -312,15 +312,12 @@ section.column h3 {
 }
 
 section.column .column-item-container {
-  /* border-radius: 0 0 10px 10px; */
-  /* border: 5px solid var(--color-primary); */
-  /* border-top: none; */
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  gap: 20px;
-  padding: 20px 20px 20px 0;
+  gap: 1.5em;
+  padding: 1.5em 1.5em 1.5em 0;
 }
 
 section.column .column-item {
@@ -351,26 +348,26 @@ section.column .column-item-title {
   flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
-  gap: 50px;
+  gap: 3em;
 }
 
 .card-container .card {
   background-color: var(--color-offwhite);
   display: flex;
   flex-direction: column;
-  width: 350px;
+  width: 22em;
   border-radius: 5px;
   box-shadow: 0 0 8px #00000039;
 }
 
 .card-container .card-header {
   border-radius: 5px 5px 0 0;
-  padding: 20px 25px;
+  padding: 1.25em 1.75em;
   background-color: var(--color-primary);
 }
 
 .card-container .card-body {
-  padding: 20px 25px;
+  padding: 1.25em 1.75em;
 }
 
 .card-container .card > * {
@@ -394,8 +391,9 @@ section.column .column-item-title {
 /* Text Title Section */
 
 section.text-title .section-content {
-  margin: 100px 0 0 0;
-  height: 200px;
+  margin: 6em 0 0 0;
+  /* height: 12em; */
+  text-align: center;
 }
 
 section.text-title h3 {
@@ -406,7 +404,7 @@ section.text-title h3 {
 
 section.image-text .section-content {
   flex-direction: row;
-  gap: 40px;
+  gap: 2.5em;
 }
 
 section.image-text .image-text-body {
@@ -416,7 +414,8 @@ section.image-text .image-text-body {
 }
 
 section.image-text img {
-  width: 40%;
+  border-radius: 10px;
+  width: 30em;
 }
 
 /* Footer */
@@ -489,24 +488,28 @@ footer a svg path {
     font-size: 12px;
   }
 
+  nav ul {
+    gap: 6em;
+  }
+
   .section-content {
     width: 90%;
   }
 }
 
-
-
 @media (max-width: 760px) {
   body {
-    font-size: 10px;
+    font-size: 14px;
   }
 
-  nav * {
-    display: none;
+  nav #nav-home {
+    width: 240px;
+    height: 65px;
   }
 
   nav ul {
-    display: none;
+    flex: 1;
+    margin: 0 0 0 2em;
   }
 
   section.hero .hero-img {
@@ -533,11 +536,35 @@ footer a svg path {
     align-items: center;
   }
 
+  .card-container .card {
+    width: 22em;
+  }
+
+  section.image-text .section-content {
+    flex-direction: column;
+  }
+
+  section.image-text img {
+    width: 25em;
+  }
+
   footer {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     padding: 0 50px;
     gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 510px) {
+  body {
+    font-size: 10px;
   }
 }

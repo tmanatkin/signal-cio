@@ -5,11 +5,9 @@ import TextTitleSection from "../Sections/TextTitleSection";
 const About: React.FC = () => {
   return (
     <main className="about">
-      <TextTitleSection
-        title="Ensuring your SaaS spend aligns with your business goals while providing expert IT
-        leadership that fuels growth and mitigates risks."
-      />
+      <TextTitleSection title="Your Trusted Partner in IT Strategy and Success." />
       <ImageTextSection
+        className="shadow-background bottom-shadow"
         paragraphs={[
           "I've had an amazing 20+ year career working in tech with companies like Oracle, Ancestry.com, Fusion-io, Instructure, Talkdesk, and Salsify.",
           "I've also had some incredible experiences working with Venture Capital, Private Equity, and going through 3 IPOs.",
