@@ -178,32 +178,41 @@ a.button {
 /* Navbar */
 
 nav {
-  width: calc(100% - 50px);
-  height: 80px;
-  padding: 0 25px;
+  width: calc(100% - 3em);
+  padding: 0 1.5em;
   background-color: var(--color-secondary-dark);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  position: absolute;
+  z-index: 3;
 }
 
 nav #nav-home {
-  width: 300px;
-  height: 65px;
-  background-image: url(/images/logo.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  text-decoration: none;
+  margin: 0.94em 0;
+}
+
+nav #nav-home img {
+  width: 15em;
+  height: 3.25;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 nav ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin: 0;
+  padding: 0;
   list-style: none;
-  gap: 9em;
-  margin: 0 20px 0 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 5em;
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
 }
 
 nav ul li a {
@@ -212,8 +221,10 @@ nav ul li a {
   text-decoration: none;
   font-size: 1.2em;
   font-weight: 500;
-  padding: 0 0 5px 0;
   white-space: nowrap;
+  display: block;
+  padding: 0 0 5px 0;
+  margin: 1.5em;
 }
 
 nav ul li a::after {
@@ -233,6 +244,83 @@ nav ul li a::after {
   }
 }
 
+nav .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 2.5em 1em;
+  position: relative;
+  user-select: none;
+}
+
+nav .menu-icon .navicon {
+  background: var(--color-offwhite);
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 1.2em;
+}
+
+nav .menu-icon .navicon:before,
+nav .menu-icon .navicon:after {
+  background: var(--color-offwhite);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+nav .menu-icon .navicon:before {
+  top: 5px;
+}
+
+nav .menu-icon .navicon:after {
+  top: -5px;
+}
+
+nav .menu-btn {
+  display: none;
+}
+
+nav .menu-btn:checked ~ ul {
+  max-height: 9em;
+}
+
+nav .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+nav .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+nav .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+@media (min-width: 761px) {
+  nav ul {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+
+  nav ul li {
+    float: left;
+  }
+
+  nav .menu-icon {
+    display: none;
+  }
+}
+
 /* Hero Section */
 
 section.hero .section-content {
@@ -240,7 +328,7 @@ section.hero .section-content {
 }
 
 section.hero.heading .section-content {
-  margin: 30px 0 0 0;
+  margin: 8em 0 0 0;
 }
 
 section.hero .hero-img {
@@ -391,7 +479,7 @@ section.column .column-item-title {
 /* Text Title Section */
 
 section.text-title .section-content {
-  margin: 6em 0 0 0;
+  margin: 10em 0 0 0;
   /* height: 12em; */
   text-align: center;
 }
@@ -488,10 +576,6 @@ footer a svg path {
     font-size: 12px;
   }
 
-  nav ul {
-    gap: 6em;
-  }
-
   .section-content {
     width: 90%;
   }
@@ -502,14 +586,10 @@ footer a svg path {
     font-size: 14px;
   }
 
-  nav #nav-home {
-    width: 240px;
-    height: 65px;
-  }
-
   nav ul {
-    flex: 1;
-    margin: 0 0 0 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
   section.hero .hero-img {
