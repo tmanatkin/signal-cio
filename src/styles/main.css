@@ -65,7 +65,7 @@ main {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  gap: 6em;
+  gap: 6rem;
 }
 
 section {
@@ -77,7 +77,7 @@ section {
 }
 
 section.space-bottom {
-  margin-bottom: 6em;
+  margin-bottom: 6rem;
 }
 
 section.reverse div.section-content {
@@ -86,7 +86,7 @@ section.reverse div.section-content {
 
 section.shadow-background {
   position: relative;
-  padding: 4.5em 0;
+  padding: 4.5rem 0;
   background-color: var(--color-offwhite-dark);
 }
 
@@ -97,7 +97,7 @@ section.shadow-background::before {
   left: 0;
   right: 0;
   width: 100%;
-  height: 1em;
+  height: 1rem;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.025), transparent);
 }
 
@@ -108,7 +108,7 @@ section.shadow-background.bottom-shadow::after {
   left: 0;
   right: 0;
   width: 100%;
-  height: 1em;
+  height: 1rem;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.025), transparent);
 }
 
@@ -117,14 +117,14 @@ section.shadow-background.bottom-shadow::after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2.5em;
+  gap: 2.5rem;
   width: 80%;
   max-width: 1200px;
 }
 
 h1 {
   color: var(--color-primary);
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 130%;
   margin: 0;
@@ -133,7 +133,7 @@ h1 {
 h2 {
   color: var(--color-secondary-dark);
   text-align: center;
-  font-size: 2.25em;
+  font-size: 2.25rem;
   font-weight: 600;
   line-height: 130%;
   margin: 0;
@@ -141,28 +141,28 @@ h2 {
 
 h3 {
   color: var(--color-secondary-dark);
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 400;
-  margin: 0 0 2em 0;
+  margin: 0 0 3rem 0;
 }
 
 p {
   margin: 0;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   line-height: 180%;
 }
 
 .button-container {
   display: flex;
   flex-direction: row;
-  gap: 1.5em;
+  gap: 1.5rem;
 }
 
 a.button {
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: 500;
-  padding: 1em 1.5em;
+  padding: 1.2rem 1.8rem;
   border-radius: 5px;
   background-color: var(--color-primary);
   color: var(--color-offwhite);
@@ -181,8 +181,8 @@ a.button {
 /* Navbar */
 
 nav {
-  width: calc(100% - 3em);
-  padding: 0 1.5em;
+  width: calc(100% - 3rem);
+  padding: 0 1.5rem;
   background-color: var(--color-secondary-dark);
   position: absolute;
   z-index: 3;
@@ -194,12 +194,12 @@ nav #nav-home {
   justify-content: center;
   float: left;
   text-decoration: none;
-  margin: 0.94em 0;
+  margin: 1rem 0;
 }
 
 nav #nav-home img {
-  width: 15em;
-  height: 3.25;
+  width: 15rem;
+  height: 3.25rem;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -212,7 +212,7 @@ nav ul {
   overflow: hidden;
   display: flex;
   flex-direction: row;
-  gap: 5em;
+  gap: 5rem;
   clear: both;
   max-height: 0;
   transition: max-height 0.2s ease-out;
@@ -222,12 +222,13 @@ nav ul li a {
   position: relative;
   color: var(--color-offwhite);
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: 500;
   white-space: nowrap;
   display: block;
-  padding: 0 0 5px 0;
-  margin: 1.5em;
+  padding: 0 0 0.25rem 0;
+  line-height: 1rem;
+  margin: 2rem;
 }
 
 nav ul li a::after {
@@ -250,7 +251,7 @@ nav ul li a::after {
 nav .menu-icon {
   cursor: pointer;
   float: right;
-  padding: 2.5em 1em;
+  padding: 2.5rem 1rem;
   position: relative;
   user-select: none;
 }
@@ -261,7 +262,7 @@ nav .menu-icon .navicon {
   height: 2px;
   position: relative;
   transition: background 0.2s ease-out;
-  width: 1.2em;
+  width: 1.2rem;
 }
 
 nav .menu-icon .navicon:before,
@@ -288,7 +289,7 @@ nav .menu-btn {
 }
 
 nav .menu-btn:checked ~ ul {
-  max-height: 9em;
+  max-height: 9rem;
 }
 
 nav .menu-btn:checked ~ .menu-icon .navicon {
@@ -331,7 +332,7 @@ section.hero .section-content {
 }
 
 section.hero.heading .section-content {
-  margin: 8em 0 0 0;
+  margin: 8rem 0 0 0;
 }
 
 section.hero .hero-img {
@@ -358,9 +359,9 @@ section.bubble .bubble {
   color: var(--color-offwhite);
   background-color: var(--color-secondary-dark);
   font-weight: 500;
-  font-size: 1.75em;
+  font-size: 1.75rem;
   line-height: 130%;
-  padding: 1em;
+  padding: 1rem;
   vertical-align: middle;
 }
 
@@ -383,7 +384,7 @@ section.column .column-container {
 
 section.column .column-header {
   background-color: var(--color-primary);
-  padding: 1em 1em;
+  padding: 1rem 1rem;
   border-radius: 10px 10px 0 0;
 }
 
@@ -395,11 +396,11 @@ section.column h3 {
 }
 
 section.column h2 {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 section.column h3 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 section.column .column-item-container {
@@ -407,8 +408,8 @@ section.column .column-item-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  gap: 1.5em;
-  padding: 1.5em 1.5em 1.5em 0;
+  gap: 1.5rem;
+  padding: 1.5rem 1.5rem 1.5rem 0;
 }
 
 section.column .column-item {
@@ -418,13 +419,13 @@ section.column .column-item {
 }
 
 section.column .column-item img {
-  width: 6em;
-  height: 6em;
+  width: 6rem;
+  height: 6rem;
   padding: 0 10px;
 }
 
 section.column p {
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 section.column .column-item-title {
@@ -439,26 +440,26 @@ section.column .column-item-title {
   flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
-  gap: 3em;
+  gap: 3rem;
 }
 
 .card-container .card {
   background-color: var(--color-offwhite);
   display: flex;
   flex-direction: column;
-  width: 22em;
+  width: 22rem;
   border-radius: 5px;
   box-shadow: 0 0 8px #00000039;
 }
 
 .card-container .card-header {
   border-radius: 5px 5px 0 0;
-  padding: 1.25em 1.75em;
+  padding: 1.25rem 1.75rem;
   background-color: var(--color-primary);
 }
 
 .card-container .card-body {
-  padding: 1.25em 1.75em;
+  padding: 1.25rem 1.75rem;
 }
 
 .card-container .card > * {
@@ -468,22 +469,22 @@ section.column .column-item-title {
 .card-container .title {
   text-align: center;
   color: var(--color-offwhite);
-  font-size: 1.35em;
+  font-size: 1.35rem;
   line-height: 140%;
   font-weight: 600;
 }
 
 .card-container .body {
   color: var(--color-secondary-dark);
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 
 /* Text Title Section */
 
 section.text-title .section-content {
-  margin: 10em 0 0 0;
-  /* height: 12em; */
+  margin: 10rem 0 0 0;
+  /* height: 12rem; */
   text-align: center;
 }
 
@@ -495,18 +496,18 @@ section.text-title h3 {
 
 section.image-text .section-content {
   flex-direction: row;
-  gap: 2.5em;
+  gap: 2.5rem;
 }
 
 section.image-text .image-text-body {
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
+  gap: 1.5rem;
 }
 
 section.image-text img {
   border-radius: 10px;
-  width: 30em;
+  width: 30rem;
 }
 
 /* Footer */
@@ -525,7 +526,7 @@ footer p,
 footer a {
   color: var(--color-offwhite);
   font-weight: 500;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   text-align: center;
 }
 
@@ -546,8 +547,8 @@ footer a::after {
 }
 
 footer a svg {
-  width: 1.5em;
-  height: 1.5em;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 footer a svg path {
@@ -564,19 +565,19 @@ footer a svg path {
 
 @media (max-width: 1300px) {
   html {
-    font-size: 0.875em;
+    font-size: 0.875rem;
   }
 }
 
 @media (max-width: 1150px) {
   section.column h2 {
-    font-size: 1.75em;
+    font-size: 1.75rem;
   }
 }
 
 @media (max-width: 1000px) {
   html {
-    font-size: 0.75em;
+    font-size: 0.75rem;
   }
 
   .section-content {
@@ -586,7 +587,7 @@ footer a svg path {
 
 @media (max-width: 760px) {
   html {
-    font-size: 0.875em;
+    font-size: 0.875rem;
   }
 
   nav ul {
@@ -620,7 +621,7 @@ footer a svg path {
   }
 
   .card-container .card {
-    width: 22em;
+    width: 22rem;
   }
 
   section.image-text .section-content {
@@ -628,7 +629,7 @@ footer a svg path {
   }
 
   section.image-text img {
-    width: 25em;
+    width: 25rem;
   }
 
   footer {
@@ -642,7 +643,7 @@ footer a svg path {
 
 @media (max-width: 600px) {
   html {
-    font-size: 0.75em;
+    font-size: 0.75rem;
   }
 }
 

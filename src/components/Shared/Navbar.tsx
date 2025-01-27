@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="header">
+    <nav>
       <Link to={`/`} id="nav-home" onClick={closeMenu}>
         <img src="/images/logo.png" alt="Signal CIO Logo" />
       </Link>
