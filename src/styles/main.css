@@ -50,11 +50,14 @@
 
 /* General */
 
+html {
+  font-size: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: var(--color-offwhite);
-  font-size: 16px;
 }
 
 main {
@@ -560,8 +563,8 @@ footer a svg path {
 /* Responsive */
 
 @media (max-width: 1300px) {
-  body {
-    font-size: 14px;
+  html {
+    font-size: 0.875em;
   }
 }
 
@@ -572,8 +575,8 @@ footer a svg path {
 }
 
 @media (max-width: 1000px) {
-  body {
-    font-size: 12px;
+  html {
+    font-size: 0.75em;
   }
 
   .section-content {
@@ -582,8 +585,8 @@ footer a svg path {
 }
 
 @media (max-width: 760px) {
-  body {
-    font-size: 14px;
+  html {
+    font-size: 0.875em;
   }
 
   nav ul {
@@ -638,13 +641,13 @@ footer a svg path {
 }
 
 @media (max-width: 600px) {
-  body {
-    font-size: 12px;
+  html {
+    font-size: 0.75em;
   }
 }
 
 @media (max-width: 510px) {
-  body {
+  html {
     font-size: 10px;
   }
 }
