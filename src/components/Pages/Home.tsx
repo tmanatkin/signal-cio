@@ -12,12 +12,12 @@ const Home: React.FC = () => {
         subtitle="Strategic IT Leadership to Fuel Your Growth."
         buttons={[
           {
-            href: "https://webforms.pipedrive.com/f/73PgPZA0UApGsYfUL50AvJF3sGApBQXZX8AtUz2Agyvd3KqT3Cnk2g8XQJKQWdnSw3",
+            href: "https://docs.google.com/presentation/d/1v-TqWPe1dcQiJHRWul4za0IFhvwD2HZX0u1FXB_yB8w/edit?usp=sharing",
             name: "Learn More",
             target: "_blank"
           },
           {
-            href: "https://signalcio.pipedrive.com/scheduler/bEMjaPsQ/signalcio-intro-initial-consultation",
+            href: "https://calendly.com/gordon-signalcio/30min",
             name: "Book a Call",
             target: "_blank"
           }
@@ -106,12 +106,12 @@ const Home: React.FC = () => {
         subtitle="Strategic SaaS Management that fuels growth and saves costs."
         buttons={[
           {
-            href: "https://webforms.pipedrive.com/f/6N6NtLvdSHXfuxvaaI1SWQ1QTWnN4fUXf2gofWdMoVaToOZloveVeax2VSLDy3D4mn",
+            href: "https://docs.google.com/presentation/d/1RZFKYSq3gvd1UrnKfSNLV-aK6t4ILQ5U5W1Lfkff2zM/edit?usp=sharing",
             name: "Learn More",
             target: "_blank"
           },
           {
-            href: "https://signalcio.pipedrive.com/scheduler/lpKWaqfo/saas-management-consultation",
+            href: "https://calendly.com/gordon-signalcio/30min",
             name: "Book a Call",
             target: "_blank"
           }
