@@ -1,6 +1,8 @@
 # Signal CIO
 
-Website for Signal CIO, an independent fractional CIO and IT strategy consultant.
+Website for a fractional CIO and IT consultant.
+
+<samp>&gt;</samp> Made for a family member's consulting business.
 
 ![React](https://img.shields.io/badge/React-222222?style=for-the-badge&logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-222222?style=for-the-badge&logo=typescript)
